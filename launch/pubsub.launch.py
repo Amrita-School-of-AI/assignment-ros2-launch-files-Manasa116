@@ -7,6 +7,7 @@ def generate_launch_description():
             package='ros2_launch_demo',
             executable='talker',
             name='talker',
+            parameters=[{'message_prefix': 'ROS2'}],
             output='screen'
         ),
         Node(
