@@ -13,7 +13,7 @@ public:
         : Node("listener")
     {
         subscription_ = this->create_subscription<std_msgs::msg::String>(
-            "/chatter", 10, std::bind(&Listener::topic_callback, this, _1));
+            "chatter", 10, std::bind(&Listener::topic_callback, this, _1));
     }
 
 private:

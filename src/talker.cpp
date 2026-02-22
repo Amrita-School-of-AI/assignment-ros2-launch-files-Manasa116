@@ -13,7 +13,7 @@ public:
   Talker()
   : Node("talker"), count_(0)
   {
-    publisher_ = this->create_publisher<std_msgs::msg::String>("/chatter", 10);
+    publisher_ = this->create_publisher<std_msgs::msg::String>("chatter", 10);
     timer_ = this->create_wall_timer(
       500ms, std::bind(&Talker::timer_callback, this));
   }
