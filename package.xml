@@ -4,7 +4,7 @@
   <version>0.0.0</version>
   <description>ROS2 launch demo package</description>
 
-  <maintainer email="your_email@example.com">Manasa</maintainer>
+  <maintainer email="manasa@example.com">Manasa</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
